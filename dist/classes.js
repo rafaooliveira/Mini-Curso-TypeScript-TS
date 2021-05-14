@@ -38,7 +38,7 @@ var CharAccount = /** @class */ (function (_super) {
             return this.level;
         },
         enumerable: false,
-        configurable: true
+        configurables: true
     });
     Object.defineProperty(CharAccount.prototype, "setLevel", {
         set: function (level) {
@@ -46,7 +46,7 @@ var CharAccount = /** @class */ (function (_super) {
             this.level = level;
         },
         enumerable: false,
-        configurable: true
+        configurables: true
     });
     return CharAccount;
 }(UserAccount));
