@@ -35,12 +35,12 @@ var CreateGame = /** @class */ (function () {
     return CreateGame;
 }());
 // implements
-var CreateGames = /** @class */ (function () {
-    function CreateGames(t, e) {
+var CreateGamess = /** @class */ (function () {
+    function CreateGamess(t, e) {
         this.title = t;
         this.extra = e;
     }
-    return CreateGames;
+    return CreateGamess;
 }());
 [1, 2, 3];
 // JQuery fez tipo um merge entre JQuery com a: string e b: JQuery
