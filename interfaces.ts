@@ -18,7 +18,7 @@ const tlou: Game ={
     console.log(`Similar games to ${title}: Uncharted, A Plague Tale, Metro`);
   }
 }
-// como deixei a propriedade getSimilars como opcional com o "?"" ela pode ser duas coisas então tenho que pode uma condição para ela funcionar
+// como deixei a propriedade getSimilars como opcional com o "?"" ela pode ser duas coisas então tenho que por uma condição para ela funcionar
 if (tlou.getSimilars) {
   tlou.getSimilars(tlou.title)
 }
@@ -88,7 +88,8 @@ interface getSimilares {
 // --------------------------- DIFERENÇAS ---------------------- //
 
 // não da pra criar tipos primitivos
-// ERRADAO interface ID extends number {} // não da pra referenciar um tipo pq com extends ele vai com contexto de valor
+// ERRADAO interface ID extends number {} 
+// não da pra referenciar um tipo pq com extends ele vai com contexto de valor
 // não consegue definir tuplas na interface
 interface Tuple {
   0: number;
