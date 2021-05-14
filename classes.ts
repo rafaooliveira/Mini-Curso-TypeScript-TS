@@ -1,10 +1,12 @@
 class UserAccount {
   name: string;
-  protected age: number
+  protected age: number;
+  street: string;
 
-  constructor(name: string, age:number) {
+  constructor(name: string, age:number, street: string) {
     this.name = name;
     this.age = age;
+    this.street = street
   }
 
   logDetails(): void {
@@ -16,8 +18,8 @@ class CharAccount extends UserAccount {
   nickname: string;
   level: number
 
-  constructor(name: string, age: number, nickname: string, level: number) {
-    super(name, age); // pegando atributos da classe que estendo UserAccount
+  constructor(name: string, age: number, street: string, nickname: string, level: number) {
+    super(name, age, street); // pegando atributos da classe que estendo UserAccount
     this.nickname = nickname
     this.level = level
   }
@@ -33,11 +35,11 @@ class CharAccount extends UserAccount {
   }
 }
 
-const will = new UserAccount('Will', 30)
+const will = new UserAccount('Will', 30, "teste")
 console.log(will)
 will.logDetails(); 
 
-const john = new CharAccount("John", 45, "johnmaster", 80)
+const john = new CharAccount("John", 45, "teste", "johnmaster", 80)
 console.log(john)
 // da pra usar os metodos da classe pai 
 john.logDetails()
