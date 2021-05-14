@@ -1,5 +1,5 @@
 "use strict";
-function logDetails(uid, item) {
+function logDetail(uid, item) {
     console.log("a product with " + uid + " has a tilte as " + item);
 }
 function logInfo(uid, user) {
@@ -10,8 +10,8 @@ var renderPlatform = function (platform) {
 };
 // renderPlatform('ios')  NÃO VAI FUNCIONAR PQ OS PARAMETROS PODEM SER SOMENTE 'Windows' | 'Linux' | 'Mac OS'
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-logDetails(123, "camiseta");
-logDetails("123", "sapato"); // já da merda pq o uid é number kzao 
+logDetail(123, "camiseta");
+logDetail("123", "sapato"); // já da merda pq o uid é number kzao 
 logInfo(123, "will");
 logInfo("123", "will");
 // mas finge que esse uid pode ser string ou number 
