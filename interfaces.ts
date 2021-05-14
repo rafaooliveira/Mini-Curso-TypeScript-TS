@@ -79,6 +79,8 @@ class CreateGames implements GameCollectionInterface {
 
 }
 
+
+
 //declarar funcao
 interface getSimilares {
   (title: string): void
