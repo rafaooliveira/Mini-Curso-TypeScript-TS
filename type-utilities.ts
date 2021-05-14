@@ -7,8 +7,8 @@ type Todo = {
 };
 //radlonly n vai poder altera propriedade
 const todo: Readonly<Todo> = {
-  title: "Assistir Dark de novo",
-  description: "Relembrar os detalhes",
+  title: "Assistir Darks de novo",
+  description: "Relembrando os detalhes",
   completed: false
 };
 console.log('Readonly', todo)
