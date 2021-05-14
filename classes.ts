@@ -12,7 +12,7 @@ class UserAccount {
   }
 }
 
-class CharAccount extends UserAccount {
+class CharAccounts extends UserAccount {
   nickname: string;
   level: number
 
@@ -37,7 +37,7 @@ const will = new UserAccount('Will', 30)
 console.log(will)
 will.logDetails(); 
 
-const john = new CharAccount("John", 45, "johnmaster", 80)
+const john = new CharAccounts("John", 45, "johnmaster", 80)
 console.log(john)
 // da pra usar os metodos da classe pai 
 john.logDetails()
